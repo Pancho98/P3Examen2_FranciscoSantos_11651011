@@ -7,5 +7,5 @@ Pila.o: Pila.h Pila.cpp MiClase.h
 MiClase.o: MiClase.h MiClase.cpp
 	g++ -c MiClase.cpp
 
-Main.o: Main.cpp
+Main.o: Main.cpp MiClase.h Pila.h
 	g++ -c Main.cpp

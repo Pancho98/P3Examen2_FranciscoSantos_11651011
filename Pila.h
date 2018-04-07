@@ -13,9 +13,10 @@ class Pila{
     Pila(MiClase*);
     MiClase* getPila();
     void setPila(MiClase*);
-    void Apilar(MiClase*);
+    void Apilar(char);
     MiClase* Desapilar();
     MiClase* Tope();
+    char Contenido();
     bool EstaVacia();
 
 };

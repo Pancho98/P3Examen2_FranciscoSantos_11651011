@@ -19,7 +19,8 @@ void Pila::setPila(MiClase* pila){
 
 }
 
-void Pila::Apilar(MiClase* a){
+void Pila::Apilar(char sym){
+  MiClase* a = new MiClase(sym);
   if (pila==NULL) {
     pila=a;
   }else{
@@ -40,9 +41,13 @@ MiClase* Pila::Desapilar(){
 }
 
 MiClase* Pila::Tope(){
-
+  return pila;
 }
 
 bool Pila::EstaVacia(){
 
+}
+
+char Pila::Contenido(){
+  return pila->getSymbolo();
 }
